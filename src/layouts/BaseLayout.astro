@@ -1,5 +1,7 @@
 ---
 import Footer from '../components/Footer.astro';
+import { Image } from 'astro:assets';
+import ogDefault from '../assets/images/social/og-default.jpg';
 
 export interface Props {
   title: string;
@@ -12,7 +14,7 @@ export interface Props {
 const { title, description, image, canonical, noindex } = Astro.props;
 const { url } = Astro.request;
 const canonicalUrl = canonical || url;
-const socialImage = image || '/images/og-default.jpg';
+const socialImage = image || ogDefault.src;
 ---
 
 <!DOCTYPE html>
