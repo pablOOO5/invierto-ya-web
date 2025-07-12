@@ -9,8 +9,20 @@ export const GET: APIRoute = async ({ site }) => {
       priority: 1.0,
     },
     {
-      url: '/servicios',
+      url: '/blog',
       lastmod: new Date(),
+      changefreq: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: '/blog/como-empezar-invertir-100-dolares',
+      lastmod: new Date('2025-01-10'),
+      changefreq: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: '/blog/etfs-vs-acciones-individuales',
+      lastmod: new Date('2025-01-08'),
       changefreq: 'monthly' as const,
       priority: 0.8,
     },

@@ -1,0 +1,268 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = [
+    {
+      slug: 'como-empezar-invertir-100-dolares',
+      title: 'Cómo Empezar a Invertir con $100 en 2025',
+      description: 'Descubre las mejores opciones para comenzar tu viaje de inversión con un presupuesto pequeño. Guía paso a paso para principiantes.',
+      content: `
+        <h2>¿Es posible empezar a invertir con solo $100?</h2>
+        <p>¡Absolutamente sí! Uno de los mitos más grandes sobre las inversiones es que necesitas miles de dólares para empezar. En 2025, existen múltiples plataformas y estrategias que te permiten comenzar con tan solo $100.</p>
+        
+        <h3>1. Fondos Cotizados (ETFs)</h3>
+        <p>Los ETFs son una excelente opción para principiantes porque:</p>
+        <ul>
+          <li>Diversificación instantánea</li>
+          <li>Costos bajos</li>
+          <li>Acceso a mercados globales</li>
+          <li>Gestión profesional</li>
+        </ul>
+
+        <h3>2. Plataformas de Micro-Inversión</h3>
+        <p>Aplicaciones como Acorns, Stash o Robinhood permiten:</p>
+        <ul>
+          <li>Inversiones desde $1</li>
+          <li>Automatización de inversiones</li>
+          <li>Educación financiera integrada</li>
+        </ul>
+
+        <h3>3. Plan de Acción Paso a Paso</h3>
+        <ol>
+          <li><strong>Define tus objetivos:</strong> ¿Para qué quieres invertir?</li>
+          <li><strong>Elige tu plataforma:</strong> Investiga comisiones y opciones</li>
+          <li><strong>Comienza con ETFs diversificados:</strong> S&P 500 o mercados globales</li>
+          <li><strong>Invierte regularmente:</strong> $25 semanales pueden hacer la diferencia</li>
+          <li><strong>Edúcate continuamente:</strong> Lee, aprende y mejora</li>
+        </ol>
+
+        <h3>Conclusión</h3>
+        <p>Empezar con $100 no solo es posible, sino recomendable. Lo importante no es la cantidad inicial, sino desarrollar el hábito de invertir regularmente y educarte en el proceso.</p>
+      `,
+      date: '2025-01-10',
+      category: 'Principiantes',
+      readTime: '5 min'
+    },
+    {
+      slug: 'etfs-vs-acciones-individuales',
+      title: 'ETFs vs Acciones Individuales: ¿Qué Conviene Más?',
+      description: 'Análisis completo de las ventajas y desventajas de invertir en ETFs versus acciones individuales. Guía para tomar la mejor decisión.',
+      content: `
+        <h2>La Gran Pregunta del Inversor</h2>
+        <p>Una de las decisiones más importantes que enfrenta todo inversor es: ¿invierto en ETFs o en acciones individuales? Ambas opciones tienen sus ventajas y la respuesta depende de tu perfil, objetivos y nivel de experiencia.</p>
+        
+        <h3>ETFs: Diversificación Instantánea</h3>
+        <h4>Ventajas:</h4>
+        <ul>
+          <li><strong>Diversificación automática:</strong> Un solo ETF puede contener cientos de acciones</li>
+          <li><strong>Menor riesgo:</strong> El riesgo se distribuye entre múltiples empresas</li>
+          <li><strong>Gestión profesional:</strong> Expertos seleccionan y balancean las inversiones</li>
+          <li><strong>Costos bajos:</strong> Comisiones de gestión típicamente menores al 0.5%</li>
+          <li><strong>Menos tiempo requerido:</strong> No necesitas analizar empresas individuales</li>
+        </ul>
+
+        <h4>Desventajas:</h4>
+        <ul>
+          <li><strong>Retornos limitados:</strong> Seguirás el promedio del mercado</li>
+          <li><strong>Menos control:</strong> No puedes elegir empresas específicas</li>
+          <li><strong>Comisiones anuales:</strong> Aunque bajas, se pagan independientemente del rendimiento</li>
+        </ul>
+
+        <h3>Acciones Individuales: Control Total</h3>
+        <h4>Ventajas:</h4>
+        <ul>
+          <li><strong>Potencial de mayores retornos:</strong> Una buena selección puede superar al mercado</li>
+          <li><strong>Control total:</strong> Tú decides exactamente dónde invertir</li>
+          <li><strong>Sin comisiones de gestión:</strong> Solo pagas al comprar/vender</li>
+          <li><strong>Dividendos directos:</strong> Recibes dividendos de empresas específicas</li>
+        </ul>
+
+        <h4>Desventajas:</h4>
+        <ul>
+          <li><strong>Mayor riesgo:</strong> El fracaso de una empresa puede afectar significativamente tu portfolio</li>
+          <li><strong>Requiere más conocimiento:</strong> Necesitas analizar estados financieros, mercados, etc.</li>
+          <li><strong>Más tiempo intensivo:</strong> Investigación constante y seguimiento</li>
+          <li><strong>Emociones:</strong> Es fácil dejarse llevar por el miedo o la codicia</li>
+        </ul>
+
+        <h3>¿Cuál Elegir? Depende de Tu Perfil</h3>
+        
+        <h4>Elige ETFs si:</h4>
+        <ul>
+          <li>Eres principiante en inversiones</li>
+          <li>Tienes poco tiempo para investigar</li>
+          <li>Prefieres un enfoque "set and forget"</li>
+          <li>Quieres minimizar riesgos</li>
+          <li>Buscas diversificación automática</li>
+        </ul>
+
+        <h4>Elige Acciones Individuales si:</h4>
+        <ul>
+          <li>Tienes conocimiento financiero sólido</li>
+          <li>Disfrutas investigar empresas</li>
+          <li>Tienes tiempo para seguimiento activo</li>
+          <li>Buscas superar los retornos del mercado</li>
+          <li>Puedes manejar mayor volatilidad</li>
+        </ul>
+
+        <h3>La Estrategia Híbrida (Recomendada)</h3>
+        <p>Para la mayoría de inversores, la mejor estrategia es una combinación:</p>
+        <ul>
+          <li><strong>70-80% en ETFs:</strong> Base sólida y diversificada</li>
+          <li><strong>20-30% en acciones individuales:</strong> Para explorar y potencialmente superar al mercado</li>
+        </ul>
+
+        <h3>Conclusión</h3>
+        <p>No hay una respuesta única. Lo importante es entender tu perfil de riesgo, objetivos y nivel de compromiso. Muchos inversores exitosos combinan ambas estrategias para obtener lo mejor de ambos mundos.</p>
+      `,
+      date: '2025-01-08',
+      category: 'Estrategias',
+      readTime: '8 min'
+    }
+  ];
+
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+---
+
+<BaseLayout 
+  title={`${post.title} - Blog Invierto Ya`}
+  description={post.description}
+>
+  <main class="min-h-screen bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-blue-600">
+          <a href="/">Invierto Ya</a>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="/" class="text-gray-700 hover:text-blue-600 transition-colors">Inicio</a>
+          <a href="/blog" class="text-blue-600 font-semibold">Blog</a>
+          <a href="/sobre-mi" class="text-gray-700 hover:text-blue-600 transition-colors">Sobre Mí</a>
+          <a href="/contacto" class="text-gray-700 hover:text-blue-600 transition-colors">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-50 py-4">
+      <div class="container mx-auto px-6">
+        <nav class="text-sm">
+          <a href="/" class="text-blue-600 hover:underline">Inicio</a>
+          <span class="mx-2 text-gray-500">/</span>
+          <a href="/blog" class="text-blue-600 hover:underline">Blog</a>
+          <span class="mx-2 text-gray-500">/</span>
+          <span class="text-gray-700">{post.title}</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Article -->
+    <article class="py-12">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <!-- Header del artículo -->
+          <header class="mb-12">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                {post.category}
+              </span>
+              <time class="text-gray-500">{post.date}</time>
+              <span class="text-gray-500">•</span>
+              <span class="text-gray-500">{post.readTime} lectura</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+              {post.title}
+            </h1>
+            
+            <p class="text-xl text-gray-600 leading-relaxed">
+              {post.description}
+            </p>
+          </header>
+
+          <!-- Imagen destacada -->
+          <div class="mb-12">
+            <div class="h-64 md:h-96 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center">
+              <span class="text-8xl">📈</span>
+            </div>
+          </div>
+
+          <!-- Contenido del artículo -->
+          <div class="prose prose-lg max-w-none">
+            <div set:html={post.content}></div>
+          </div>
+
+          <!-- Compartir y navegación -->
+          <div class="mt-12 pt-8 border-t border-gray-200">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Comparte este artículo</h3>
+                <div class="flex space-x-4">
+                  <a href="#" class="text-blue-600 hover:text-blue-800">Twitter</a>
+                  <a href="#" class="text-blue-600 hover:text-blue-800">LinkedIn</a>
+                  <a href="#" class="text-blue-600 hover:text-blue-800">Facebook</a>
+                </div>
+              </div>
+              <a href="/blog" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                ← Volver al Blog
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Newsletter CTA -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-700">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">
+          ¿Te gustó este artículo?
+        </h2>
+        <p class="text-xl text-blue-100 mb-8">
+          Suscríbete y recibe más contenido como este directo en tu email.
+        </p>
+        <a href="/#newsletter" class="bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors inline-block">
+          Suscribirme al Newsletter
+        </a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .prose h2 {
+    @apply text-2xl font-bold text-gray-800 mt-8 mb-4;
+  }
+  
+  .prose h3 {
+    @apply text-xl font-bold text-gray-800 mt-6 mb-3;
+  }
+  
+  .prose h4 {
+    @apply text-lg font-semibold text-gray-800 mt-4 mb-2;
+  }
+  
+  .prose p {
+    @apply text-gray-600 mb-4 leading-relaxed;
+  }
+  
+  .prose ul, .prose ol {
+    @apply mb-4 pl-6;
+  }
+  
+  .prose li {
+    @apply text-gray-600 mb-2;
+  }
+  
+  .prose strong {
+    @apply font-semibold text-gray-800;
+  }
+</style>

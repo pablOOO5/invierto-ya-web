@@ -52,14 +52,19 @@ Sitio web personal de la marca **Invierto Ya**, enfocado en inversiones y educac
 | `npm run dev`          | Inicia el servidor local en `localhost:4321` |
 | `npm run build`        | Construye el sitio para producción en `./dist/` |
 | `npm run preview`      | Previsualiza la build local antes de desplegar |
+| `npm run check`        | Verifica el código con Astro check |
+| `npm run lint`         | Ejecuta linting y verificación de tipos |
+| `npm run format`       | Formatea el código con Prettier |
+| `npm run clean`        | Limpia directorios de build y cache |
 | `npm run astro ...`    | Ejecuta comandos CLI de Astro como `astro add`, `astro check` |
 
 ## 📄 Páginas Principales
 
-- **Inicio (/)** - Página principal con servicios y presentación
-- **Servicios** - Detalle de servicios de inversión
-- **Sobre Mí** - Información personal y experiencia
-- **Contacto** - Formulario de contacto y consulta gratuita
+- **Inicio (/)** - Página principal con newsletter y presentación personal
+- **Blog (/blog)** - Artículos sobre inversiones y educación financiera
+- **Posts del Blog (/blog/[slug])** - Artículos individuales con contenido detallado
+- **Sobre Mí (/sobre-mi)** - Historia personal, filosofía de inversión y experiencia
+- **Contacto (/contacto)** - Formulario de contacto, FAQ y opciones de comunicación
 
 ## 🔧 Configuración
 

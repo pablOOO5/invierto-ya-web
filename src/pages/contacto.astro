@@ -1,0 +1,286 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Contacto - Invierto Ya"
+  description="¿Tienes preguntas sobre inversiones? Contáctame para consultas personalizadas, colaboraciones o simplemente para charlar sobre finanzas e inversiones."
+>
+  <main class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-blue-600">
+          <a href="/">Invierto Ya</a>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="/" class="text-gray-700 hover:text-blue-600 transition-colors">Inicio</a>
+          <a href="/blog" class="text-gray-700 hover:text-blue-600 transition-colors">Blog</a>
+          <a href="/sobre-mi" class="text-gray-700 hover:text-blue-600 transition-colors">Sobre Mí</a>
+          <a href="/contacto" class="text-blue-600 font-semibold">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-5xl font-bold text-gray-800 mb-6">
+            Hablemos de Inversiones
+          </h1>
+          <p class="text-xl text-gray-600 mb-8">
+            ¿Tienes preguntas sobre inversiones? ¿Quieres una consulta personalizada? ¡Estoy aquí para ayudarte!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opciones de Contacto -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Email -->
+            <div class="text-center p-6 bg-blue-50 rounded-2xl">
+              <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl text-white">📧</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Email</h3>
+              <p class="text-gray-600 mb-4">
+                Para consultas generales o colaboraciones
+              </p>
+              <a href="mailto:contacto@inviertoya.com" class="text-blue-600 font-semibold hover:underline">
+                contacto@inviertoya.com
+              </a>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="text-center p-6 bg-green-50 rounded-2xl">
+              <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl text-white">📬</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Newsletter</h3>
+              <p class="text-gray-600 mb-4">
+                Recibe tips y análisis exclusivos
+              </p>
+              <a href="/#newsletter" class="text-green-600 font-semibold hover:underline">
+                Suscribirse gratis
+              </a>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="text-center p-6 bg-purple-50 rounded-2xl">
+              <div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl text-white">📱</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Sígueme</h3>
+              <p class="text-gray-600 mb-4">
+                Contenido diario en redes sociales
+              </p>
+              <div class="grid grid-cols-2 gap-3">
+                <a href="https://www.tiktok.com/@invierto.ya" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center bg-black hover:bg-gray-800 text-white px-3 py-2 rounded-lg text-sm transition-colors">
+                  <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43V7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.43z"/>
+                  </svg>
+                  TikTok
+                </a>
+                <a href="https://www.youtube.com/@inviertoya" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-lg text-sm transition-colors">
+                  <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                  YouTube
+                </a>
+                <a href="https://www.instagram.com/invierto.ya/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-lg text-sm transition-colors">
+                  <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.017 0C8.396 0 7.989.013 7.041.048 4.928.048 3.335 1.653 3.335 3.766 3.335 4.714 3.335 5.121 3.335 8.742v6.551c0 2.089 1.593 3.682 3.706 3.682h9.551c2.113 0 3.706-1.593 3.706-3.682V8.742C20.298 5.121 20.298 4.714 20.298 3.766 20.298 1.653 18.705.048 16.592.048H12.017zm0 1.44c2.136 0 2.389.007 3.232.043.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.037.843.043 1.096.043 3.231s-.006 2.389-.043 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.281.11-.705.24-1.485.276-.843.036-1.096.042-3.231.042s-2.389-.006-3.232-.042c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.036-.843-.041-1.096-.041-3.23 0-2.134.005-2.389.041-3.232.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                  Instagram
+                </a>
+                <a href="https://x.com/invierto_ya" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center bg-gray-800 hover:bg-gray-900 text-white px-3 py-2 rounded-lg text-sm transition-colors">
+                  <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  X
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario de Contacto -->
+          <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+              <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+                Envíame un Mensaje
+              </h2>
+              
+              <form class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="nombre" class="block text-sm font-medium text-gray-700 mb-2">
+                      Nombre *
+                    </label>
+                    <input 
+                      type="text" 
+                      id="nombre" 
+                      name="nombre" 
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      placeholder="Tu nombre completo"
+                    />
+                  </div>
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                      Email *
+                    </label>
+                    <input 
+                      type="email" 
+                      id="email" 
+                      name="email" 
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      placeholder="tu@email.com"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="asunto" class="block text-sm font-medium text-gray-700 mb-2">
+                    Asunto *
+                  </label>
+                  <select 
+                    id="asunto" 
+                    name="asunto" 
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  >
+                    <option value="">Selecciona un tema</option>
+                    <option value="consulta-general">Consulta General sobre Inversiones</option>
+                    <option value="asesoria-personalizada">Asesoría Personalizada</option>
+                    <option value="colaboracion">Colaboración/Partnership</option>
+                    <option value="prensa">Medios/Prensa</option>
+                    <option value="feedback">Feedback del Blog/Newsletter</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="experiencia" class="block text-sm font-medium text-gray-700 mb-2">
+                    Tu nivel de experiencia en inversiones
+                  </label>
+                  <select 
+                    id="experiencia" 
+                    name="experiencia"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  >
+                    <option value="">Opcional - Selecciona tu nivel</option>
+                    <option value="principiante">Principiante (nunca he invertido)</option>
+                    <option value="basico">Básico (menos de 1 año invirtiendo)</option>
+                    <option value="intermedio">Intermedio (1-3 años invirtiendo)</option>
+                    <option value="avanzado">Avanzado (+3 años invirtiendo)</option>
+                    <option value="profesional">Profesional del sector financiero</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-2">
+                    Mensaje *
+                  </label>
+                  <textarea 
+                    id="mensaje" 
+                    name="mensaje" 
+                    rows="6" 
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Cuéntame en qué puedo ayudarte..."
+                  ></textarea>
+                </div>
+
+                <div class="flex items-center">
+                  <input 
+                    id="newsletter-opt" 
+                    name="newsletter-opt" 
+                    type="checkbox"
+                    class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                  />
+                  <label for="newsletter-opt" class="ml-3 text-sm text-gray-600">
+                    Quiero recibir el newsletter con tips de inversión (recomendado)
+                  </label>
+                </div>
+
+                <div class="text-center">
+                  <button 
+                    type="submit"
+                    class="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-12 rounded-lg transition-colors duration-300 flex items-center justify-center mx-auto"
+                  >
+                    <span class="mr-2">🚀</span>
+                    Enviar Mensaje
+                  </button>
+                </div>
+              </form>
+
+              <div class="mt-8 pt-8 border-t border-gray-200 text-center">
+                <p class="text-sm text-gray-600">
+                  <span class="font-semibold">Tiempo de respuesta:</span> Suelo responder en 24-48 horas durante días laborales.
+                </p>
+                <p class="text-sm text-gray-600 mt-2">
+                  Para consultas urgentes, envía un email directamente a 
+                  <a href="mailto:contacto@inviertoya.com" class="text-blue-600 hover:underline">contacto@inviertoya.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+            Preguntas Frecuentes
+          </h2>
+          
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="font-bold text-gray-800 mb-2">¿Ofreces asesoría personalizada?</h3>
+              <p class="text-gray-600">
+                Sí, ofrezco consultas personalizadas para ayudarte a crear tu estrategia de inversión. Contáctame para conocer más detalles sobre disponibilidad y tarifas.
+              </p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="font-bold text-gray-800 mb-2">¿El newsletter es realmente gratis?</h3>
+              <p class="text-gray-600">
+                ¡Completamente gratis! Comparto tips, análisis y estrategias de inversión sin costo. Mi objetivo es democratizar la educación financiera.
+              </p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="font-bold text-gray-800 mb-2">¿Respondes a consultas básicas por email?</h3>
+              <p class="text-gray-600">
+                Sí, respondo consultas generales por email. Para estrategias personalizadas detalladas, recomiendo una consulta paga para darte el tiempo y atención que mereces.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-700">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">
+          ¿Aún no estás suscrito al Newsletter?
+        </h2>
+        <p class="text-xl text-blue-100 mb-8">
+          Únete a miles de personas que ya reciben mis consejos de inversión cada semana.
+        </p>
+        <a href="/#newsletter" class="bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors inline-block">
+          Suscribirme Gratis
+        </a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
