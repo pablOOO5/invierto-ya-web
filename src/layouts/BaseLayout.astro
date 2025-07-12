@@ -1,0 +1,69 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+
+const { title, description, image, canonical, noindex } = Astro.props;
+const { url } = Astro.request;
+const canonicalUrl = canonical || url;
+const socialImage = image || '/images/og-default.jpg';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="generator" content={Astro.generator}>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href={canonicalUrl}>
+  
+  <!-- Robots meta tag -->
+  {noindex && <meta name="robots" content="noindex, nofollow">}
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={canonicalUrl}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={socialImage}>
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Invierto Ya">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content={canonicalUrl}>
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+  <meta property="twitter:image" content={socialImage}>
+  
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Invierto Ya",
+      "url": "https://inviertoya.com",
+      "description": "Experto en inversiones y educación financiera. Aprende a invertir de forma inteligente y construye tu futuro financiero.",
+      "author": {
+        "@type": "Person",
+        "name": "Invierto Ya",
+        "description": "Experto en inversiones y educación financiera"
+      }
+    }
+  </script>
+</head>
+<body>
+  <slot />
+</body>
+</html>

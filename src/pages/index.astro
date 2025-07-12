@@ -1,11 +1,165 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout 
+  title="Invierto Ya - Experto en Inversiones y Educación Financiera"
+  description="Aprende a invertir de forma inteligente con Invierto Ya. Estrategias de inversión, análisis de mercado y educación financiera para construir tu futuro económico."
+>
+  <main class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-blue-600">
+          <h1>Invierto Ya</h1>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#servicios" class="text-gray-700 hover:text-blue-600 transition-colors">Servicios</a>
+          <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">Sobre Mí</a>
+          <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition-colors">Contacto</a>
+        </div>
+        <button class="md:hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-20 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+          Construye tu <span class="text-blue-600">Futuro Financiero</span> con Estrategias Inteligentes
+        </h2>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          Experto en inversiones con más de 10 años de experiencia. Te ayudo a tomar decisiones financieras informadas y a crear un portfolio diversificado que genere resultados consistentes.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            Consulta Gratuita
+          </button>
+          <button class="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+            Ver Estrategias
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="bg-white py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+          Servicios de Inversión
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 p-8 rounded-lg text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Análisis de Mercado</h3>
+            <p class="text-gray-600">Análisis técnico y fundamental detallado para identificar oportunidades de inversión con alto potencial de retorno.</p>
+          </div>
+          
+          <div class="bg-gray-50 p-8 rounded-lg text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Gestión de Portfolio</h3>
+            <p class="text-gray-600">Construcción y optimización de carteras de inversión personalizadas según tu perfil de riesgo y objetivos financieros.</p>
+          </div>
+          
+          <div class="bg-gray-50 p-8 rounded-lg text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Educación Financiera</h3>
+            <p class="text-gray-600">Cursos y mentorías personalizadas para que aprendas a invertir de forma autónoma y tomes decisiones informadas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50 py-20">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl font-bold text-gray-800 mb-8">
+            Sobre Invierto Ya
+          </h2>
+          <p class="text-lg text-gray-600 mb-8">
+            Con más de una década de experiencia en los mercados financieros, he ayudado a cientos de personas a construir su libertad financiera a través de estrategias de inversión inteligentes y educación financiera práctica.
+          </p>
+          <div class="grid md:grid-cols-3 gap-8 mt-12">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-blue-600 mb-2">500+</div>
+              <div class="text-gray-600">Clientes Satisfechos</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-blue-600 mb-2">10+</div>
+              <div class="text-gray-600">Años de Experiencia</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-blue-600 mb-2">95%</div>
+              <div class="text-gray-600">Tasa de Éxito</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="bg-white py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-8">
+          ¿Listo para Invertir?
+        </h2>
+        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          Agenda una consulta gratuita de 30 minutos para discutir tus objetivos financieros y descubrir cómo puedo ayudarte a alcanzarlos.
+        </p>
+        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+          Agendar Consulta Gratuita
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="col-span-2">
+            <h3 class="text-2xl font-bold mb-4">Invierto Ya</h3>
+            <p class="text-gray-400 mb-4">
+              Tu experto en inversiones y educación financiera. Construyendo futuros financieros exitosos desde 2014.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white">Análisis de Mercado</a></li>
+              <li><a href="#" class="hover:text-white">Gestión de Portfolio</a></li>
+              <li><a href="#" class="hover:text-white">Educación Financiera</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>Email: info@inviertoya.com</li>
+              <li>Teléfono: +34 XXX XXX XXX</li>
+              <li>LinkedIn: /in/inviertoya</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 Invierto Ya. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</BaseLayout>
