@@ -2,24 +2,42 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import heroAbout from '../assets/images/hero/hero-about.jpg';
+
+const pageTitle = "Sobre Mí - Invierto Ya";
+const pageDescription = "Conoce mi historia, experiencia en inversiones y cómo ayudo a personas a construir su futuro financiero a través de educación e inversiones inteligentes.";
+const pageH1 = "Sobre Mí: Mi Historia en el Mundo de las Inversiones";
 ---
 
-<BaseLayout 
-  title="Sobre Mí - Invierto Ya"
-  description="Conoce mi historia, experiencia en inversiones y cómo ayudo a personas a construir su futuro financiero a través de educación e inversiones inteligentes."
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  h1={pageH1}
 >
   <main class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
     <!-- Header -->
     <header class="bg-white shadow-lg">
-      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
         <div class="text-2xl font-bold text-blue-600">
           <a href="/">Invierto Ya</a>
         </div>
         <div class="hidden md:flex space-x-6">
-          <a href="/" class="text-gray-700 hover:text-blue-600 transition-colors">Inicio</a>
-          <a href="/blog" class="text-gray-700 hover:text-blue-600 transition-colors">Blog</a>
+          <a
+            href="/"
+            class="text-gray-700 hover:text-blue-600 transition-colors"
+            >Inicio</a
+          >
+          <a
+            href="/blog"
+            class="text-gray-700 hover:text-blue-600 transition-colors">Blog</a
+          >
           <a href="/sobre-mi" class="text-blue-600 font-semibold">Sobre Mí</a>
-          <a href="/contacto" class="text-gray-700 hover:text-blue-600 transition-colors">Contacto</a>
+          <a
+            href="/contacto"
+            class="text-gray-700 hover:text-blue-600 transition-colors"
+            >Contacto</a
+          >
         </div>
       </nav>
     </header>
@@ -28,11 +46,10 @@ import heroAbout from '../assets/images/hero/hero-about.jpg';
     <section class="py-20">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
-          <h1 class="text-5xl font-bold text-gray-800 mb-6">
-            Sobre Mí
-          </h1>
+          <h1 class="text-5xl font-bold text-gray-800 mb-6">{pageH1}</h1>
           <p class="text-xl text-gray-600 mb-12">
-            Mi misión es ayudarte a construir tu futuro financiero a través de educación e inversiones inteligentes.
+            Mi misión es ayudarte a construir tu futuro financiero a través de
+            educación e inversiones inteligentes.
           </p>
         </div>
       </div>
@@ -44,15 +61,23 @@ import heroAbout from '../assets/images/hero/hero-about.jpg';
         <div class="max-w-4xl mx-auto">
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 class="text-3xl font-bold text-gray-800 mb-6">Nuestra Misión</h2>
+              <h2 class="text-3xl font-bold text-gray-800 mb-6">
+                Nuestra Misión
+              </h2>
               <p class="text-lg text-gray-600 mb-6">
-                En Invierto Ya creemos que cada persona merece tener las herramientas y conocimientos necesarios para construir un futuro financiero sólido.
+                En Invierto Ya creemos que cada persona merece tener las
+                herramientas y conocimientos necesarios para construir un futuro
+                financiero sólido.
               </p>
               <p class="text-lg text-gray-600 mb-6">
-                Nos dedicamos a democratizar el acceso a la educación financiera y estrategias de inversión que antes solo estaban disponibles para unos pocos.
+                Nos dedicamos a democratizar el acceso a la educación financiera
+                y estrategias de inversión que antes solo estaban disponibles
+                para unos pocos.
               </p>
             </div>
-            <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-2xl text-white">
+            <div
+              class="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-2xl text-white"
+            >
               <h3 class="text-2xl font-bold mb-4">¿Por qué existimos?</h3>
               <ul class="space-y-3">
                 <li class="flex items-center">
@@ -82,33 +107,46 @@ import heroAbout from '../assets/images/hero/hero-about.jpg';
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-6">
         <div class="max-w-6xl mx-auto">
-          <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nuestros Valores</h2>
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+            Nuestros Valores
+          </h2>
           <div class="grid md:grid-cols-3 gap-8">
             <div class="text-center">
-              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div
+                class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
                 <span class="text-2xl">🔍</span>
               </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Transparencia</h3>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">
+                Transparencia
+              </h3>
               <p class="text-gray-600">
-                Información clara y honesta sobre riesgos y oportunidades de inversión.
+                Información clara y honesta sobre riesgos y oportunidades de
+                inversión.
               </p>
             </div>
             <div class="text-center">
-              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div
+                class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
                 <span class="text-2xl">📚</span>
               </div>
               <h3 class="text-xl font-bold text-gray-800 mb-3">Educación</h3>
               <p class="text-gray-600">
-                Creemos que el conocimiento es la base de toda decisión financiera inteligente.
+                Creemos que el conocimiento es la base de toda decisión
+                financiera inteligente.
               </p>
             </div>
             <div class="text-center">
-              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div
+                class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
                 <span class="text-2xl">🚀</span>
               </div>
               <h3 class="text-xl font-bold text-gray-800 mb-3">Crecimiento</h3>
               <p class="text-gray-600">
-                Acompañamos tu evolución como inversor desde el primer paso hasta objetivos avanzados.
+                Acompañamos tu evolución como inversor desde el primer paso
+                hasta objetivos avanzados.
               </p>
             </div>
           </div>
@@ -123,31 +161,58 @@ import heroAbout from '../assets/images/hero/hero-about.jpg';
           ¿Quieres Comenzar tu Viaje de Inversión?
         </h2>
         <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-          Únete a mi newsletter y recibe estrategias exclusivas, análisis de mercado y consejos prácticos para construir tu futuro financiero.
+          Únete a mi newsletter y recibe estrategias exclusivas, análisis de
+          mercado y consejos prácticos para construir tu futuro financiero.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/#newsletter" class="bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors inline-block">
+          <a
+            href="/#newsletter"
+            class="bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors inline-block"
+          >
             📧 Suscribirme al Newsletter
           </a>
-          <a href="/contacto" class="border-2 border-white text-white font-bold py-4 px-8 rounded-lg hover:bg-white hover:text-blue-600 transition-colors inline-block">
+          <a
+            href="/contacto"
+            class="border-2 border-white text-white font-bold py-4 px-8 rounded-lg hover:bg-white hover:text-blue-600 transition-colors inline-block"
+          >
             💬 Contactar Directamente
           </a>
         </div>
-        
+
         <!-- Redes Sociales en CTA -->
         <div class="mt-8 pt-8 border-t border-blue-500">
           <p class="text-blue-100 mb-4">📱 También puedes seguirme en:</p>
           <div class="flex justify-center space-x-4">
-            <a href="https://www.tiktok.com/@invierto.ya" target="_blank" rel="noopener noreferrer" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all duration-300 text-white text-sm">
+            <a
+              href="https://www.tiktok.com/@invierto.ya"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all duration-300 text-white text-sm"
+            >
               📱 TikTok
             </a>
-            <a href="https://www.youtube.com/@inviertoya" target="_blank" rel="noopener noreferrer" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all duration-300 text-white text-sm">
+            <a
+              href="https://www.youtube.com/@inviertoya"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all duration-300 text-white text-sm"
+            >
               📺 YouTube
             </a>
-            <a href="https://www.instagram.com/invierto.ya/" target="_blank" rel="noopener noreferrer" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all duration-300 text-white text-sm">
+            <a
+              href="https://www.instagram.com/invierto.ya/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all duration-300 text-white text-sm"
+            >
               📷 Instagram
             </a>
-            <a href="https://x.com/invierto_ya" target="_blank" rel="noopener noreferrer" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all duration-300 text-white text-sm">
+            <a
+              href="https://x.com/invierto_ya"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all duration-300 text-white text-sm"
+            >
               🐦 X
             </a>
           </div>

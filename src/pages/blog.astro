@@ -6,11 +6,16 @@ import { getAllPosts } from '../data/blogPosts';
 
 // Obtener todos los posts usando la función centralizada
 const posts = getAllPosts();
+
+const pageTitle = "Blog Inversiones - Invierto Ya";
+const pageDescription = "Descubre estrategias de inversión, análisis de mercado y consejos financieros en nuestro blog. Educación financiera práctica para inversores de todos los niveles.";
+const pageH1 = "Blog de Inversiones y Educación Financiera";
 ---
 
 <BaseLayout 
-  title="Blog de Inversiones - Invierto Ya"
-  description="Descubre estrategias de inversión, análisis de mercado y consejos financieros en nuestro blog. Educación financiera práctica para inversores de todos los niveles."
+  title={pageTitle}
+  description={pageDescription}
+  h1={pageH1}
 >
   <main class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
     <!-- Header -->
@@ -33,7 +38,7 @@ const posts = getAllPosts();
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
           <h1 class="text-5xl font-bold text-gray-800 mb-6">
-            📰 Blog de Inversiones
+            📰 {pageH1}
           </h1>
           <p class="text-xl text-gray-600 mb-8">
             Estrategias, análisis y consejos para construir tu futuro financiero

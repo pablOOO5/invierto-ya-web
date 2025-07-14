@@ -15,11 +15,16 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const allPosts = getAllPosts();
+
+const pageTitle = `${post.title}`;
+const pageDescription = post.description;
+const pageH1 = post.h1;
 ---
 
 <BaseLayout 
-  title={`${post.title} - Blog Invierto Ya`}
-  description={post.description}
+  title={pageTitle}
+  description={pageDescription}
+  h1={pageH1}
 >
   <main class="min-h-screen bg-white">
     <!-- Header -->
@@ -66,7 +71,7 @@ const allPosts = getAllPosts();
             </div>
             
             <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
-              {post.title}
+              {pageH1}
             </h1>
             
             <p class="text-xl text-gray-600 leading-relaxed">

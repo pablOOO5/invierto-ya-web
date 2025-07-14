@@ -15,7 +15,8 @@ const imgEstrategias = imgETFs; // Para posts de estrategias
 export interface BlogPost {
   id: number;
   slug: string;
-  title: string;
+  title: string;        // Meta título optimizado para SEO (máx 65 chars)
+  h1: string;          // H1 visible en la página (puede ser más descriptivo)
   description: string;
   image: any;
   date: string;
@@ -29,7 +30,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 1,
     slug: 'como-empezar-invertir-100-dolares',
-    title: 'Cómo Empezar a Invertir con $100 en 2025',
+    title: 'Cómo Empezar a Invertir con $100 - Invierto Ya',
+    h1: 'Cómo Empezar a Invertir con $100 en 2025: Guía Completa para Principiantes',
     description: 'Descubre las mejores opciones para comenzar tu viaje de inversión con un presupuesto pequeño. Guía paso a paso para principiantes.',
     excerpt: 'Descubre las mejores opciones para comenzar tu viaje de inversión con un presupuesto pequeño.',
     image: imgPrincipiantes,
@@ -73,7 +75,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 2,
     slug: 'etfs-vs-acciones-individuales',
-    title: 'ETFs vs Acciones Individuales: ¿Qué Conviene Más?',
+    title: 'ETFs vs Acciones Individuales - Invierto Ya',
+    h1: 'ETFs vs Acciones Individuales: ¿Qué Conviene Más para tu Portfolio?',
     description: 'Análisis completo de las ventajas y desventajas de invertir en ETFs versus acciones individuales. Guía para tomar la mejor decisión.',
     excerpt: 'Análisis completo de las ventajas y desventajas de cada opción de inversión.',
     image: imgEstrategias,
@@ -152,7 +155,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 3,
     slug: 'errores-comunes-al-invertir',
-    title: 'Los 5 Errores Más Comunes al Invertir',
+    title: 'Los 5 Errores al Invertir - Invierto Ya',
+    h1: 'Los 5 Errores Más Comunes al Invertir y Cómo Evitarlos',
     description: 'Aprende de los errores más frecuentes que cometen los inversores y cómo evitarlos para proteger tu dinero y maximizar tus retornos.',
     excerpt: 'Aprende de los errores más frecuentes y cómo evitarlos en tus inversiones.',
     image: imgEducacion,
@@ -250,7 +254,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 4,
     slug: 'introduccion-bonos-inversion',
-    title: 'Introducción a los Bonos: La Inversión Conservadora',
+    title: 'Introducción a los Bonos - Invierto Ya',
+    h1: 'Introducción a los Bonos: La Inversión Conservadora Que Debes Conocer',
     description: 'Todo lo que necesitas saber sobre bonos: qué son, cómo funcionan, tipos y por qué deberían formar parte de tu portfolio de inversión.',
     excerpt: 'Descubre por qué los bonos son una parte esencial de cualquier portfolio balanceado.',
     image: imgEducacion,
@@ -317,7 +322,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 5,
     slug: 'diversificacion-portfolio-basico',
-    title: 'Diversificación de Portfolio: Guía para Principiantes',
+    title: 'Diversificación de Portfolio - Invierto Ya',
+    h1: 'Diversificación de Portfolio: Guía Completa para Principiantes',
     description: 'Aprende cómo diversificar tu portfolio de inversión para minimizar riesgos y maximizar retornos. Estrategias prácticas y ejemplos reales.',
     excerpt: 'La clave para reducir riesgos y crear un portfolio robusto que funcione en cualquier condición de mercado.',
     image: imgPrincipiantes,
@@ -391,7 +397,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 6,
     slug: 'analisis-tecnico-principiantes',
-    title: 'Análisis Técnico para Principiantes: Interpretando Gráficos',
+    title: 'Análisis Técnico para Principiantes - Invierto Ya',
+    h1: 'Análisis Técnico para Principiantes: Interpretando Gráficos y Patrones',
     description: 'Introducción al análisis técnico: cómo leer gráficos, identificar patrones y usar indicadores para tomar mejores decisiones de inversión.',
     excerpt: 'Aprende a interpretar gráficos y patrones para mejorar tus decisiones de entrada y salida.',
     image: imgEstrategias,

@@ -6,12 +6,13 @@ import ogDefault from '../assets/images/social/og-default.jpg';
 export interface Props {
   title: string;
   description: string;
+  h1?: string;
   image?: string;
   canonical?: string;
   noindex?: boolean;
 }
 
-const { title, description, image, canonical, noindex } = Astro.props;
+const { title, description, h1, image, canonical, noindex } = Astro.props;
 const { url } = Astro.request;
 const canonicalUrl = canonical || url;
 const socialImage = image || ogDefault.src;
